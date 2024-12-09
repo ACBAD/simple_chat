@@ -12,6 +12,7 @@ int main(){
     cout<<"Request!"<<endl;
     res.set_content("Hello World!", "text/plain");
   });
+  cout<<"Start Listening ..."<<endl;
   svr.listen("0.0.0.0", 80);
   return 0;
 }
