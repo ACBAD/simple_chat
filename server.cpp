@@ -13,7 +13,9 @@ int main(){
     res.set_content("Hello World!", "text/plain");
   });
   cout<<"Start Listening ..."<<endl;
-  if(!svr.listen("0.0.0.0", 80))
-    cout<<"Listen thread exit abnormally"<<endl;
+  if(!svr.listen("0.0.0.0", 80)){
+    cout<<"Try 12378 port"<<endl;
+    svr.listen("0.0.0.0", 12378);
+  }
   return 0;
 }
