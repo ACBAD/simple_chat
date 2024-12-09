@@ -12,6 +12,7 @@ find_package(Threads REQUIRED)
 add_executable(server server.cpp)
 add_executable(client client.cpp)
 
+message("Linking")
 if(CMAKE_SYSTEM_NAME MATCHES Windows)
   message("On Windows")
   target_link_libraries(server PRIVATE ssl crypto wsock32 ws2_32)
