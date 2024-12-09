@@ -3,6 +3,7 @@
     "string": "cpp",
     "mutex": "cpp",
     "ostream": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "unordered_map": "cpp"
   }
 }
