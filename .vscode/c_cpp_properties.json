@@ -2,7 +2,10 @@
     "configurations": [
         {
             "name": "Win32",
-            "includePath": [],
+            "includePath": [
+                "D:\\CodeLib\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\**",
+                "D:\\CodeLib\\mingw64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\boost\\**"
+            ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",

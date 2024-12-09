@@ -1,9 +1,6 @@
 {
+  "C_Cpp.errorSquiggles": "enabled",
   "files.associations": {
-    "string": "cpp",
-    "mutex": "cpp",
-    "ostream": "cpp",
-    "iostream": "cpp",
-    "unordered_map": "cpp"
+    "cstdlib": "cpp"
   }
 }
