@@ -6,6 +6,7 @@
 #endif
 using namespace std;
 int main(){
+  cout<<"Start"<<endl;
   httplib::Server svr;
   svr.Get("/hi", [](const httplib::Request &, httplib::Response &res){
     cout<<"Request!"<<endl;
