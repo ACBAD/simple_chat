@@ -235,7 +235,11 @@ using socket_t = int;
 #include <cassert>
 #include <cctype>
 #include <climits>
+#ifdef _WIN32
 #include <mingw.condition_variable.h>
+#else
+#include <condition_variable>
+#endif
 #include <cstring>
 #include <errno.h>
 #include <exception>
@@ -247,14 +251,22 @@ using socket_t = int;
 #include <list>
 #include <map>
 #include <memory>
+#ifdef _WIN32
 #include <mingw.mutex.h>
+#else
+#include <mutex>
+#endif
 #include <random>
 #include <regex>
 #include <set>
 #include <sstream>
 #include <string>
 #include <sys/stat.h>
+#ifdef _WIN32
 #include <mingw.thread.h>
+#else
+#include <thread>
+#endif
 #include <unordered_map>
 #include <unordered_set>
 #include <utility>
