@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "string": "cpp",
-    "mutex": "cpp"
+    "mutex": "cpp",
+    "ostream": "cpp"
   }
 }
